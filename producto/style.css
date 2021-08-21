@@ -1,0 +1,123 @@
+
+/*Declaración colores*/
+:root {
+    --primario: #9C27B0;
+    --secundario:#89119D;
+    --letras: #FFCE00;
+    --letrasOscuro: rgb(233,287,2);
+    --blanco: #fff;
+    --fuente: 'Staatliches', cursive;
+}
+
+/*Declaración globales*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fuente);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: var(--letras);
+    font-family: var(--fuente);
+}
+
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+/* Código BEM */
+
+.header {
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.header__logo {
+    height: 10rem;
+}
+
+.nav {
+    width: 100%;
+    background-color: var(--secundario);
+    height: 5rem;
+}
+
+.nav__ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__ul-li {
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+.nav__ul-a {
+    font-size: 3rem;
+    color: var(--blanco);
+}
+.nav__enlace-activo {
+    color: var(--letras);
+}
+.nav__ul-li a:hover {
+    color: var(--letras);
+}
+
+.footer {
+    background-color: var(--secundario);
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer__p {
+    font-family: var(--fuente);
+    font-size: 2.2rem;
+}
