@@ -158,7 +158,16 @@ h3 {
 
 .grafico {
     min-height: 30rem;
-    width: 100%; 
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 70rem){
+    .grafico {
+        min-height: 30rem;
+        width: 98%;
+        margin: 0 auto;
+    }
 }
 
 .grafico__camisas {
