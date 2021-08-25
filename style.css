@@ -48,7 +48,6 @@ img {
 h1, h2, h3 {
     text-align: center;
     color: var(--letras);
-    font-family: var(--fuente);
 }
 
 h1 {
